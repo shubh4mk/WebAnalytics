@@ -1,0 +1,292 @@
+/* General reset and font settings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto Slab', serif;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+}
+
+#nav {
+  width: 100%;
+  background-color: #333;
+  color: #fff;
+}
+
+.navTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.navItem h2 {
+  margin: 0;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+}
+
+.searchInput {
+  padding: 5px;
+  margin-right: 10px;
+}
+
+.searchIcon {
+  cursor: pointer;
+}
+
+.limitedOffer {
+  color: #f39c12;
+}
+
+.navBottom {
+  display: flex;
+  justify-content: space-around;
+  background-color: #222;
+  padding: 10px 0;
+}
+
+.menuItem {
+  color: #fff;
+  cursor: pointer;
+}
+
+.slider {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.sliderWrapper {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.sliderItem {
+  min-width: 100%;
+  position: relative;
+}
+
+.sliderImg {
+  width: 100%;
+}
+
+.sliderBg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.sliderTitle, .sliderPrice {
+  position: absolute;
+  color: #fff;
+}
+
+.sliderTitle {
+  top: 20%;
+  left: 20px;
+  font-size: 2em;
+}
+
+.sliderPrice {
+  bottom: 20%;
+  left: 20px;
+  font-size: 1.5em;
+}
+
+.buyButton {
+  position: absolute;
+  bottom: 10px;
+  left: 20px;
+  background-color: #f39c12;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+/* Features styles */
+.features {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  background-color: #f4f4f4;
+}
+
+.feature {
+  text-align: center;
+}
+
+.featureIcon {
+  width: 50px;
+}
+
+/* Product section styles */
+.product {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  background-color: #f4f4f4;
+}
+
+.productImg {
+  width: 50%;
+  margin-bottom: 20px;
+}
+
+.productDetails {
+  padding: 20px;
+  flex: 1;
+}
+
+.colors, .sizes {
+  margin: 10px 0;
+}
+
+.color, .size {
+  display: inline-block;
+  margin: 5px;
+  padding: 10px;
+  background: #ddd;
+}
+
+.productButton {
+  background-color: #f39c12;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+/* Product Video Styles */
+.productVideo {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.videoTitle {
+  margin-bottom: 10px;
+}
+
+/* Privacy Policy Styles */
+.policy {
+  margin-top: 20px;
+}
+
+.policyTitle {
+  margin-bottom: 10px;
+}
+
+.policy a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.policy a:hover {
+  text-decoration: underline;
+}
+
+/* Contact Form Styles */
+.contactForm {
+  margin-top: 30px;
+  width: 100%;
+}
+
+.formTitle {
+  margin-bottom: 20px;
+}
+
+form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.submitButton {
+  background-color: #f39c12;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+/* Gallery section styles */
+.gallery {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.galleryItem {
+  position: relative;
+  width: 30%;
+  margin-bottom: 20px;
+}
+
+.galleryTitle {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: #fff;
+}
+
+/* New Season section styles */
+.newSeason {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #eee;
+}
+
+.nsImg {
+  width: 50%;
+}
+
+.nsButton {
+  background-color: #f39c12;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .product {
+      flex-direction: column;
+      align-items: center;
+  }
+  .productImg {
+      width: 80%;
+  }
+}
+
+@media (max-width: 480px) {
+  .sliderTitle {
+      font-size: 1.5em;
+  }
+  .sliderPrice {
+      font-size: 1em;
+  }
+  .productImg {
+      width: 100%;
+  }
+}
